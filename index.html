@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section:left {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h2>CPSC2125 Exams</h2>
+</header>
+
+  <img align= "data:image/png;base64,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" alt= "pga logo" hight="100" width="200">
+
+  <nav>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=G2AvRfxgpL4">Tiger Woods</a></li>
+      <li><a href="https://www.youtube.com/watch?v=sqWG9SbgxLE">Rory Mcilroy</a></li>
+      <li><a href="https://www.youtube.com/watch?v=hEwfCkEoX9g">Dustin Johnson</a></li>
+    <li><a href= "page2.html">Survey</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Golf in Motion</h1>
+    <p>within this web page we will broadcast some of the worlds top golfers. many of these names you will know and love, but some that will come later will leave a lastuing impression!</p>
+    <p>this month we will be broadcasting Duatin Johnson, Rory Mcilroy, and the goat himself Tiger Woods. 
+
+      We hope you enjoy!
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p> &copy;
+    <a href= "url">email: heinzelman.christopher@gmail com</a> 
+<small> chris heinzelman</small>
+    </p>
+</footer>
+
+</body>
+</html>
